@@ -1,0 +1,227 @@
+:root {
+    // ### Primary
+    --Dark-Violet: hsl(256, 26%, 20%);
+    --Grayish-Blue: hsl(216, 30%, 68%);
+    // ### Neutral
+    --Very-Dark-Violet: hsl(270, 9%, 17%);
+    --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    // - Family: [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display)
+    // - Family: [Karla](https://fonts.google.com/specimen/Karla)
+}
+
+.nav-bar {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 1.2rem;
+
+
+    .desktop-icons {
+        display: none;
+    }
+
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .open {
+        display: flex;
+        align-self: flex-end;
+        position: relative;
+        top: 0.5px;
+        right: -80%;
+    }
+
+    .open.add {
+        display: none;
+    }
+
+    .hamburger-menu.add {
+        display: block;
+        transition: all 1s ease-in;
+
+
+        .close {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            align-self: left;
+            transition: all 1s ease-in;
+        }
+
+        .menu {
+            background-color: var(--Very-Dark-Violet);
+            background-image: url(../../images/bg-pattern-mobile-nav.svg);
+            background-position: bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            text-align: center;
+            list-style-type: none;
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 100vw;
+            height: calc(100vh - 50px);
+            z-index: 100;
+            text-transform: uppercase;
+            transition: all 1s ease-out;
+
+
+            li {
+                margin: 40px 0;
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                outline: none;
+
+
+            }
+
+            .btn-adjust {
+                padding-inline: 7rem;
+            }
+
+            .btn-adjust:hover,
+            .btn-adjust:focus {
+                color: var(--Very-Dark-Violet);
+            }
+        }
+
+    }
+}
+
+
+.container {
+
+    .intro-image {
+        width: 100%;
+    }
+
+    .what-we-do {
+        background-color: var(--Dark-Violet);
+        color: #fff;
+        background-image: url(../../images/bg-pattern-intro-left-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: top left;
+        padding: 7rem 2.5rem;
+        text-align: center;
+
+        .bg-desktop-pattern-left {
+            display: none;
+        }
+
+        hr {
+            display: none;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        p {
+            line-height: 25px;
+            font-size: 15px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    }
+
+    .bg-pattern-right {
+        position: absolute;
+        top: auto;
+        right: 0;
+        z-index: 2;
+    }
+
+
+}
+
+.why-choose-us {
+    padding: 5rem 1.5rem;
+
+    hr {
+        margin: 0 auto;
+        background-color: var(--Dark-Grayish-Violet);
+        width: 7rem;
+        outline: none;
+    }
+
+    h1 {
+        color: var(--Very-Dark-Violet);
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .benefits {
+        padding: 0 0.1rem;
+        margin-bottom: 2rem;
+        color: var(--Dark-Grayish-Violet);
+
+        h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--Very-Dark-Violet);
+        }
+    }
+
+    .how-we-work {
+        padding: 4rem 1rem;
+        width: 100%;
+        color: #fff;
+        background-color: var(--Dark-Violet);
+        background-image: url(../../images/bg-pattern-how-we-work-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: top right;
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 1.8rem;
+        }
+    }
+
+}
+
+.reach-out {
+    width: 100%;
+    padding-inline: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    background-color: var(--Very-Light-Gray);
+    background-image: url(../../images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+    // background-size: 100%;
+    z-index: 2;
+    border-bottom: .5px solid var(--Dark-Grayish-Violet);
+
+    .footer-pattern {
+        display: none;
+    }
+
+    img {
+        margin-bottom: 1.5rem;
+    }
+
+
+}
+
+.heading {
+
+    ul {
+        padding-block: 1.5rem;
+        list-style-type: none;
+
+        li {
+            font-weight: 700;
+            line-height: 1.5rem;
+        }
+    }
+}

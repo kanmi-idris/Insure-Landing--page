@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+:root {
+  --Dark-Violet: hsl(256, 26%, 20%);
+  --Grayish-Blue: hsl(216, 30%, 68%);
+  --Very-Dark-Violet: hsl(270, 9%, 17%);
+  --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Weights: 400;
+  --Weights: 400, 700;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Utility Classes*/
+.btn {
+  border: 2px solid #fff;
+  padding: 0.7rem 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--Very-Dark-Violet);
+  background-color: #fff;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3.5rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: var(--Very-Light-Gray);
+}
+footer h4 {
+  color: var(--Dark-Grayish-Violet);
+  font-weight: 400;
+}
+footer a {
+  text-decoration: none;
+  color: var(--Very-Dark-Violet);
+  line-height: 1.5rem;
+}/*# sourceMappingURL=base.css.map */
